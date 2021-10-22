@@ -1,0 +1,17 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+	<div class="main-container">
+		
+		<img id="profile-pic" src="{% static 'images/raj.jpg' %}">
+
+		<h1>{{post.headline}}</h1>
+		<h4>{{post.sub_headline}}</h4>
+		
+		<p>
+			{{post.body | safe }}
+		</p>
+
+	</div>
+{% endblock content %}
